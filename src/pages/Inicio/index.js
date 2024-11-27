@@ -31,7 +31,7 @@ export default function Inicio() {
                 backgroundImage: `url(${imagemDeFundo})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: 'fixed',
+                backgroundPosition: '100%',
                 color: corDoTexto
                 }}>
             <div className='corpo'>
@@ -43,10 +43,11 @@ export default function Inicio() {
                         trocarCorDoTexto();
                     }}>Mudar tema</button>
                 </div>
-                <div>
+                <div className='corpo_conteudo'>
+                <div className='banner'>
                     <img className='logo' src="../../../image/logo.png" alt="fotologo" />
                 </div>
-                <nav>
+                <nav className='busca'>
                     <input className='pesqui' type='text' placeholder='Pesquisar' />
                     <Link to="/personagens">
                         <img className='lupa' src='../../../image/lupaa.png' alt='lupa' />
@@ -56,6 +57,7 @@ export default function Inicio() {
                     <h1>Escolha o seu <br />personagem</h1>
                     <p className='sobre-conteudo'> O Universo Marvel é o universo compartilhado onde<br />ocorrem as histórias na maioria dos
                         títulos de<br /> quadrinhos americanos e outras mídias publicadas<br />pela Marvel Entertainment.</p>
+                </div>
                 </div>
             </div>
         </div>

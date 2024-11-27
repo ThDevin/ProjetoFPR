@@ -1,4 +1,4 @@
-.topo  {
+.topo {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -16,12 +16,15 @@
     margin-right: -20rem;
     margin-top: 7rem;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .pesqui2 {
     height: 30px;
     padding-left: 5px;
-    width: 20rem;  border: 1px solid #34AC40;
+    width: 20rem;
+    border: 1px solid #34AC40;
     border-radius: 5px;
 }
 
@@ -39,7 +42,7 @@
     border: none;
     background-color: rgba(240, 248, 255, 0);
     color: rgb(250, 177, 42);
-    
+
 }
 
 .tema2 p {
@@ -66,7 +69,6 @@
     height: 2rem;
     left: -3rem;
     padding-left: 15px;
-    padding-bottom: 10px;
 }
 
 .personagens li {
@@ -88,7 +90,7 @@
     height: 138px;
 }
 
-.personagens span  {
+.personagens span {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -101,6 +103,7 @@
     line-height: 12px;
 }
 
-.personagens span, p {
+.personagens span,
+p {
     padding-left: 10px;
 }
