@@ -32,9 +32,10 @@
 }
 
 .logo {
-    width: 33%;
+    width: 35%;
     margin-left: 1rem;
-    margin-top: -3rem;
+    margin-top: -4rem;
+    display: block;
 }
 
 .corpo {
@@ -81,7 +82,7 @@
 
 .sobre {
     margin-left: -4rem;
-    padding-top: 3rem;
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: start;

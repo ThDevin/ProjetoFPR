@@ -31,7 +31,7 @@ export default function Inicio() {
                 backgroundImage: `url(${imagemDeFundo})`,
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                backgroundPosition: '100%',
+                backgroundPosition: 'center center',
                 color: corDoTexto
                 }}>
             <div className='corpo'>
@@ -48,7 +48,12 @@ export default function Inicio() {
                     <img className='logo' src="../../../image/logo.png" alt="fotologo" />
                 </div>
                 <nav className='busca'>
-                    <input className='pesqui' type='text' placeholder='Pesquisar' />
+                    <select className='pesqui' type='text' placeholder='Pesquisar'>
+                        <option>Iron Man</option>
+                        <option>Super Man</option>
+                        <option>Spider Man</option>
+                        <option>Capitan America</option>
+                    </select>
                     <Link to="/personagens">
                         <img className='lupa' src='../../../image/lupaa.png' alt='lupa' />
                     </Link>
