@@ -1,0 +1,28 @@
+h3 {
+    color: #F46D1B;
+}
+
+.sobre {
+    margin-left: -4rem;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.sobre h1 {
+    line-height: 50px;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.sobre p {
+    margin-left: -8px;
+}
+
+.sobre-conteudo {
+    font-weight: 600;
+    padding-top: 1rem;
+    font-style: normal;
+}

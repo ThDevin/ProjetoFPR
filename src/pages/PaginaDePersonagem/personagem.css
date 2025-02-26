@@ -7,13 +7,12 @@
 .logo2 {
     width: 16rem;
     margin-top: 2rem;
-
     margin-left: 5rem;
 }
 
 .navegacao {
     position: relative;
-    margin-right: -20rem;
+    margin-right: -10rem;
     margin-top: 7rem;
     box-sizing: border-box;
     display: flex;
@@ -68,7 +67,10 @@
     position: relative;
     height: 2rem;
     left: -3rem;
+    top: 4px;
     padding-left: 15px;
+    width: 30px;
+    height: 25px;
 }
 
 .personagens li {

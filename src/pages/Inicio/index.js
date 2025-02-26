@@ -1,6 +1,9 @@
-import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import './inicio.css'
+import { LogoFPR } from '../../Components/Logo';
+import { BarraDePesquisa } from '../../Components/BarraDePesquisa';
+import { ConteudoTexto } from '../../Components/ConteudoTexto';
+import { PincelTema } from '../../Components/PincelTema';
 
 export default function Inicio() {
 
@@ -23,8 +26,6 @@ export default function Inicio() {
         }
       };
 
-
-
     return (
         <div className='conteudo'style={{
                 height: '100vh',
@@ -36,33 +37,16 @@ export default function Inicio() {
                 }}>
             <div className='corpo'>
                 <div className='tema'>
-                    <img className='pincel' src='../../../image/tema.png ' alt='Pincel' />
-                    <p>Tema Light</p>
+                   <PincelTema />
                     <button onClick={() => {
                         trocarImagemDeFundo();
                         trocarCorDoTexto();
                     }}>Mudar tema</button>
                 </div>
-                <div className='corpo_conteudo'>
-                <div className='banner'>
-                    <img className='logo' src="../../../image/logo.png" alt="fotologo" />
-                </div>
-                <nav className='busca'>
-                    <select className='pesqui' type='text' placeholder='Pesquisar'>
-                        <option>Iron Man</option>
-                        <option>Super Man</option>
-                        <option>Spider Man</option>
-                        <option>Capitan America</option>
-                    </select>
-                    <Link to="/personagens">
-                        <img className='lupa' src='../../../image/lupaa.png' alt='lupa' />
-                    </Link>
-                </nav>
-                <div className='sobre'>
-                    <h1>Escolha o seu <br />personagem</h1>
-                    <p className='sobre-conteudo'> O Universo Marvel é o universo compartilhado onde<br />ocorrem as histórias na maioria dos
-                        títulos de<br /> quadrinhos americanos e outras mídias publicadas<br />pela Marvel Entertainment.</p>
-                </div>
+                <div>
+                    <LogoFPR />
+                    <BarraDePesquisa />
+                    <ConteudoTexto />
                 </div>
             </div>
         </div>
